@@ -1,0 +1,24 @@
+
+.imgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr; 
+  gap: 0.5rem;
+  height: 50vh;
+
+  }
+
+  img {
+    float: left;
+    width:  300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 65em) {
+  .imgrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media only screen and (max-width: 45em) {
+  .imgrid { grid-template-columns: repeat(1, 1fr); }
+}
